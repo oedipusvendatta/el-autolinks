@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Autolinks | Bridging Mechanics & Car Owners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- AOS Scroll Animation CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Roboto', sans-serif; }
+    body { background-color: #f8f9fa; color: #333; line-height: 1.6; perspective: 1000px; }
+    a { text-decoration: none; color: inherit; }
+    header { display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; background: #111; color: #fff; }
+    header nav a { margin-left: 2rem; font-weight: 500; transition: 0.3s; }
+    header nav a:hover { color: #ffcc00; }
+    .cta-btn { background: #ffcc00; padding: 0.7rem 1.5rem; border-radius: 5px; font-weight: 700; color: #111; transition: 0.3s; cursor: pointer; }
+    .cta-btn:hover { background: #e6b800; }
+
+    .hero { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; height: 90vh; padding: 0 5%; background: url('https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=1950&q=80') no-repeat center/cover; color: #fff; text-shadow: 0 0 10px rgba(0,0,0,0.6); transition: transform 0.3s ease-out; transform-style: preserve-3d; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+    .hero p { font-size: 1.2rem; margin-bottom: 2rem; max-width: 500px; }
+
+    section { padding: 5% 5%; }
+    .section-title { text-align: center; font-size: 2rem; margin-bottom: 2rem; font-weight: 700; }
+    .features, .how-it-works, .testimonials { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; }
+    .feature, .step, .testimonial { background: #fff; padding: 2rem; border-radius: 10px; flex: 1 1 250px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); text-align: center; transition: transform 0.3s ease-out; transform-style: preserve-3d; cursor: pointer; }
+    .feature h3, .step h3 { margin-bottom: 1rem; color: #111; }
+    .testimonial { background: #111; color: #fff; box-shadow: 0 5px 15px rgba(0,0,0,0.2); }
+
+    footer { background: #222; color: #ccc; padding: 2rem 5%; display: flex; justify-content: space-between; flex-wrap: wrap; }
+    footer a { color: #ffcc00; }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><strong>EL AUTOLINKS</strong></div>
+  <nav>
+    <a href="#how-it-works">How It Works</a>
+    <a href="#features">Features</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#signup" class="cta-btn">Get Started</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Bridging Car Owners with Trusted Mechanics</h1>
+  <p>Find verified mechanics near you. Schedule jobs instantly. Transparent pricing, trusted reviews.</p>
+  <a href="#signup" class="cta-btn">Find a Mechanic</a>
+  <a href="#signup" class="cta-btn" style="margin-left:1rem;">Join as Mechanic</a>
+</section>
+
+<section id="how-it-works">
+  <h2 class="section-title">How It Works</h2>
+  <div class="how-it-works">
+    <div class="step card" data-aos="fade-up" data-aos-duration="800">
+      <h3>Request Service</h3>
+      <p>Describe your car issue and request a mechanic in your area.</p>
+    </div>
+    <div class="step card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="100">
+      <h3>Get Quotes</h3>
+      <p>Mechanics send quotes and availability for your request.</p>
+    </div>
+    <div class="step card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">
+      <h3>Confirm & Pay</h3>
+      <p>Select a mechanic, confirm the job, and pay securely via escrow.</p>
+    </div>
+    <div class="step card" data-aos="fade-up" data-aos-duration="800" data-aos-delay="300">
+      <h3>Rate & Review</h3>
+      <p>Provide feedback and help the community trust verified mechanics.</p>
+    </div>
+  </div>
+</section>
+
+<section id="features">
+  <h2 class="section-title">Features</h2>
+  <div class="features">
+    <div class="feature card" data-aos="zoom-in" data-aos-duration="800"> <h3>Verified Mechanics</h3><p>All mechanics are screened and certified for your safety.</p> </div>
+    <div class="feature card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100"> <h3>Transparent Pricing</h3><p>Upfront quotes, no hidden fees, no surprises.</p> </div>
+    <div class="feature card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200"> <h3>Real-Time Matching</h3><p>Instantly connect with mechanics in your area.</p> </div>
+    <div class="feature card" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300"> <h3>Secure Payments</h3><p>Escrow system ensures payment after job completion.</p> </div>
+  </div>
+</section>
+
+<section id="testimonials">
+  <h2 class="section-title">What Users Say</h2>
+  <div class="testimonials">
+    <div class="testimonial card" data-aos="fade-right" data-aos-duration="800">
+      <p>"Found a mechanic within minutes! Transparent pricing and great service."</p>
+      <strong>- Sarah L., Car Owner</strong>
+    </div>
+    <div class="testimonial card" data-aos="fade-left" data-aos-duration="800" data-aos-delay="100">
+      <p>"El Autolinks brought me consistent jobs and new clients. Highly recommended."</p>
+      <strong>- John K., Mechanic</strong>
+    </div>
+  </div>
+</section>
+
+<section id="signup">
+  <h2 class="section-title">Get Started Today</h2>
+  <div style="text-align:center;">
+    <a href="#" class="cta-btn">Find a Mechanic</a>
+    <a href="#" class="cta-btn" style="margin-left:1rem;">Join as Mechanic</a>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 EL AUTOLINKS. All Rights Reserved.</p>
+  <div>
+    <a href="#">Privacy</a> | <a href="#">Terms</a>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  AOS.init();
+
+  // 3D hover effect for all cards
+  const cards = document.querySelectorAll('.card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', e => {
+      const rect = card.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const cx = rect.width/2;
+      const cy = rect.height/2;
+      const dx = (x - cx) / cx;
+      const dy = (y - cy) / cy;
+      card.style.transform = `rotateX(${dy*10}deg) rotateY(${dx*10}deg) translateZ(10px)`;
+    });
+    card.addEventListener('mouseleave', e => {
+      card.style.transform = 'rotateX(0deg) rotateY(0deg) translateZ(0)';
+    });
+  });
+
+  // Hero 3D tilt
+  const hero = document.querySelector('.hero');
+  hero.addEventListener('mousemove', e => {
+    const rect = hero.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+    const cx = rect.width/2;
+    const cy = rect.height/2;
+    const dx = (x - cx)/cx;
+    const dy = (y - cy)/cy;
+    hero.style.transform = `perspective(1000px) rotateY(${dx*5}deg) rotateX(${-dy*5}deg)`;
+  });
+  hero.addEventListener('mouseleave', e => {
+    hero.style.transform = 'perspective(1000px) rotateY(0deg) rotateX(0deg)';
+  });
+</script>
+
+</body>
+</html>
+	
