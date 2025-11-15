@@ -1,0 +1,109 @@
+/* === Basic Reset === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0d0d0d;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* === Navigation === */
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 25px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(15px);
+  background: rgba(0,0,0,0.3);
+  z-index: 10;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: 500;
+}
+
+/* === Hero Section === */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10%;
+  background: linear-gradient(135deg, #0b0b0b, #1a1a1a);
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeUp 1.2s ease forwards;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeUp 1.4s ease forwards;
+}
+
+/* === CTA Button === */
+button {
+  margin-top: 30px;
+  padding: 15px 35px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background: #ff3f3f;
+  cursor: pointer;
+  transition: transform .3s, background .3s;
+}
+
+button:hover {
+  transform: translateY(-5px) scale(1.05);
+  background: #ff5a5a;
+}
+
+/* === Features Section === */
+.features {
+  padding: 100px 10%;
+}
+
+.feature-item {
+  margin-bottom: 80px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.7s ease;
+}
+
+.feature-item.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.feature-item h2 {
+  font-size: 2.3rem;
+  margin-bottom: 15px;
+}
+
+/* === Keyframe Animations === */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
